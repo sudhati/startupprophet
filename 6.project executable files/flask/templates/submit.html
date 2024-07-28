@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prediction Result - Startup Prophet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body text="white" class="i">
+    <button class="su" onclick="window.location.href='/'">Back</button>
+    <h1 align="center">Prediction Result</h1>
+    <h1 align="center" size="4">The prediction for the {{ org_name }} is: {{ pred }}</h1>
+</body>
+</html>

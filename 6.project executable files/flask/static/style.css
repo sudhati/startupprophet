@@ -1,0 +1,188 @@
+body {
+    background-image: url();
+    background-size: cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    
+}
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333; /* Background color for navbar */
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            padding: 14px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            color: #fff;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            background: url() no-repeat center center/cover; /* Replace with your image URL */
+            position: relative;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+
+        .hero-section p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .hero-section .button-group {
+            margin-top: 20px;
+        }
+
+        .hero-section button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff7e5f;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 5px;
+        }
+
+        .hero-section button:hover {
+            background-color: #feb47b;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333; /* Background color for footer */
+            color: #fff;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .ab {
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        .ab:hover {
+            background-color: #ff6e4f;
+        }
+        .co{
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .co:hover{
+            background-color: #ff6e4f;
+        }
+        .pr{
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        .pr:hover{
+            background-color: #ff6e4f;
+        }
+        .su{
+            background-color: #ff7e5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .su:hover{
+            background-color: #ff6e4f;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .abo{
+            background-image:url('s1.jpg')
+        } 
+        .i{
+           background-image:url('s4.jpeg')
+        } 
+        .h{
+           background-image:url('s5.jpeg')
+        } 
+        .a{
+          background-image:url('s6.jpg')
+        }

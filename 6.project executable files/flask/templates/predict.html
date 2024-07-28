@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STARTUP PROPHET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body text="#fff" class="i">
+    <button class="pr" onclick="window.location.href='/'">Back</button> 
+    <div class="startup">
+        <h1 align="center">ENTER ORGANIZATION DETAILS HERE</h1>
+        <hr/>
+        <form action="{{ url_for('submit') }}" method="POST" align="center">
+            <label for="org_name">Organization Name:</label>
+            <input type="text" id="org_name" name="org_name" required><br><br><br>
+            <label for="is_ecommerce">is_ecommerce:</label>
+            <select id="is_ecommerce" name="is_ecommerce">
+                <option value="none">select</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select><br><br><br>
+            <label for="is_otherstate">is_otherstate:</label>
+            <select id="is_otherstate" name="is_otherstate">
+                <option value="none">select</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select><br><br><br>
+            <label for="has_VC">has_Venture-capital:</label>
+            <select id="has_VC" name="has_VC">
+                <option value="none">select</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select><br><br><br>
+            <label for="has_angel">has_angel-investors:</label>
+            <select id="has_angel" name="has_angel">
+                <option value="none">select</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select><br><br><br>
+            <label for="has_aroundA">has_aroundA:</label>
+            <select id="has_aroundA" name="has_aroundA">
+                <option value="none">select</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select><br><br><br>
+            <label for="has_aroundB">has_aroundB:</label>
+            <select id="has_aroundB" name="has_aroundB">
+                <option value="none">select</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select><br><br><br>
+            <label for="has_aroundC">has_aroundC:</label>
+            <select id="has_aroundC" name="has_aroundC">
+                <option value="none">select</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select><br><br><br>
+            <label for="has_aroundD">has_aroundD:</label>
+            <select id="has_aroundD" name="has_aroundD">
+                <option value="none">select</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select><br><br><br>
+            <label for="is_top500">is_top500:</label>
+            <select id="is_top500" name="is_top500">
+                <option value="none">select</option>
+                <option value="0">no</option>
+                <option value="1">yes</option>
+            </select><br><br><br>
+            <label for="relationships">relationships:</label>
+            <select id="relationships" name="relationships">
+                <option value="none">select</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="42">42</option>
+                <option value="45">45</option>
+                <option value="57">57</option>
+                <option value="63">63</option>
+            </select><br><br><br>    
+            <label for="funding_rounds">funding_rounds:</label>
+            <select id="funding_rounds" name="funding_rounds">
+                <option value="none">select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+            </select><br><br><br>
+            <label for="milestones">milestones:</label>
+            <select id="milestones" name="milestones">
+                <option value="none">select</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+            </select><br><br>
+            <button class="pr" onclick="window.location.href=' http://127.0.0.1:5000/submit'" type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

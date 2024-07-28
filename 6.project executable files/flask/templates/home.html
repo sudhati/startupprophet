@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for("static", filename='style.css') }}">
+    
+    <title>Home Page</title>
+    
+</head>
+<body class='h'>
+    <div class="navbar">
+        <div class="logo">STARTUP PREDICTOR</div>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>STARTUP PROPHET.</h1>
+            <p>WE WILL PREDICT WHETHER THE STARTUP IS SUCCESS OR FAILURE.</p>
+            <div class="button-group">
+                <button onclick="window.location.href=' http://127.0.0.1:5000/info'">Predict</button>
+                <button onclick="window.location.href=' http://127.0.0.1:5000/about'">About</button>
+                <button onclick="window.location.href=' http://127.0.0.1:5000/contactus'">Contact Us</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 MyWebsite. All rights reserved.
+    </div>
+</body>
+</html>
